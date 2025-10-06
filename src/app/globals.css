@@ -1,0 +1,25 @@
+ @import "tailwindcss";
+@import "select2/dist/css/select2.min.css";
+
+
+:root {
+  --text-clr: #615004;
+  --text-hover-clr: #184309;
+  --section-bg-clr:#fef6eb;
+
+
+}
+.font-cormorant {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.font-nexa {
+  font-family: "Montserrat", sans-serif;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+ 
+
+

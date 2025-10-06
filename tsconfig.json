@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    /* Language & Environment */
+    "target": "ES2020",
+    "lib": ["dom", "dom.iterable", "esnext"],
+
+    /* JavaScript Support */
+    "allowJs": true,
+    "checkJs": false,
+
+    /* Type Checking */
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    /* Module Resolution */
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+
+    /* JSX & React */
+    "jsx": "preserve",
+    "isolatedModules": true,
+    "noEmit": true,
+
+    /* Project Options */
+    "incremental": true,
+    "plugins": [{ "name": "next" }],
+
+    /* Path Aliases */
+    "paths": {
+      "@/*": ["./src/*"],
+      "@lib/*": ["./src/api/lib/*"]   // ✅ add alias for api/lib
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}
